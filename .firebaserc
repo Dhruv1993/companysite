@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "company-b232c",
+    "company-staging": "company-b232c"
+  },
+  "targets": {},
+  "etags": {}
+}
