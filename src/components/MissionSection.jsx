@@ -5,6 +5,7 @@ import {
   Grid,
   useTheme,
   useMediaQuery,
+  Link,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
@@ -60,6 +61,7 @@ const industries = [
     icon: <SecurityIcon sx={{ fontSize: { xs: 32, sm: 40, md: 48 } }} />,
     title: "Ndis software",
     description: "National Disability Insurance Scheme and Aged care",
+    link: "https://www.supportsage.com.au",
   },
 ];
 
@@ -112,8 +114,8 @@ function MissionSection() {
           </Typography>
 
           <Grid container spacing={3} justifyContent="center">
-            {industries.map((industry, index) => (
-              <Grid item xs={6} key={industry.title}>
+            {industries.map((industry, index) => {
+              const CardContent = (
                 <MotionBox
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -178,8 +180,25 @@ function MissionSection() {
                     {industry.title}
                   </Typography>
                 </MotionBox>
-              </Grid>
-            ))}
+              );
+
+              return (
+                <Grid item xs={6} key={industry.title}>
+                  {industry.link ? (
+                    <Link
+                      href={industry.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      sx={{ textDecoration: "none" }}
+                    >
+                      {CardContent}
+                    </Link>
+                  ) : (
+                    CardContent
+                  )}
+                </Grid>
+              );
+            })}
           </Grid>
         </Box>
 
@@ -225,8 +244,8 @@ function MissionSection() {
 
           {/* 4 Column Grid - Now showing all 8 cards */}
           <Grid container spacing={3} justifyContent="center">
-            {industries.map((industry, index) => (
-              <Grid item xs={12} md={3} key={industry.title}>
+            {industries.map((industry, index) => {
+              const CardContent = (
                 <MotionBox
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -292,8 +311,25 @@ function MissionSection() {
                     {industry.title}
                   </Typography>
                 </MotionBox>
-              </Grid>
-            ))}
+              );
+
+              return (
+                <Grid item xs={12} md={3} key={industry.title}>
+                  {industry.link ? (
+                    <Link
+                      href={industry.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      sx={{ textDecoration: "none" }}
+                    >
+                      {CardContent}
+                    </Link>
+                  ) : (
+                    CardContent
+                  )}
+                </Grid>
+              );
+            })}
           </Grid>
         </Box>
       </Container>
