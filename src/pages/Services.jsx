@@ -9,6 +9,7 @@ import SoftwareBg from "../components/svgs/SoftwareBg";
 import HardwareBg from "../components/svgs/HardwareBg";
 import PrintingBg from "../components/svgs/PrintingBg";
 import IcBg from "../components/svgs/IcBg";
+import SEO from "../components/SEO";
 
 // Import optimized hardware images
 import customHardware1 from "../assets/optimized/customHardware1.jpg";
@@ -143,6 +144,12 @@ const services = [
 function Services() {
   return (
     <Box>
+      <SEO
+        title="Services"
+        description="From custom software development to integrated circuits, we provide end-to-end technology solutions including hardware design, 3D printing services, and PCB development."
+        path="/services"
+        keywords="custom software development, hardware solutions, 3D printing services, integrated circuit design, PCB design, embedded systems, IoT development, crypto dashboard, trading platform, rapid prototyping, Australia"
+      />
       <ServicesHero />
       {services.map((service, index) => (
         <ServiceDetail key={service.title} {...service} index={index} />
