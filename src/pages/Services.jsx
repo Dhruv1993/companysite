@@ -20,6 +20,7 @@ import stm from "../assets/optimized/stm.jpg";
 import nutrimesh from "../assets/optimized/nutrimesh.jpg";
 import nutrimesh2 from "../assets/optimized/nutrimesh-2.jpg";
 import nutrimesh3 from "../assets/optimized/nutrimesh-3.jpg";
+import vocetta from "../assets/optimized/vocetta.jpg";
 
 // Import trading platform images
 import cryptodashboard from "../assets/cryptodashboard.png";
@@ -49,6 +50,12 @@ const services = [
         description:
           "Personalized weekly memoir correlating sleep, nutrition, and habit patterns.",
         image: nutrimesh3,
+      },
+      {
+        title: "Vocetta",
+        description:
+          "AI voice agent that takes client calls and surfaces the exact codebase files your developer needs.",
+        image: vocetta,
       },
       {
         title: "Crypto Dashboard",
