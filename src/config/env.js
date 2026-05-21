@@ -20,7 +20,7 @@ export const config = {
 
   // Contact Information
   contact: {
-    email: import.meta.env.VITE_CONTACT_EMAIL || "softpeaklabs@gmail.com",
+    email: import.meta.env.VITE_CONTACT_EMAIL || "dhruv.khullar@softpeaklabs.com.au",
     phone: import.meta.env.VITE_CONTACT_PHONE || "+61 426 381 739",
     location: import.meta.env.VITE_CONTACT_LOCATION || "Melbourne, Australia",
   },

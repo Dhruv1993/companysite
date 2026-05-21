@@ -24,7 +24,12 @@ import customHardware1 from "../assets/optimized/customHardware1.jpg";
 import selfbalancebot from "../assets/optimized/selfbalancebot.jpg";
 import stm from "../assets/optimized/stm.jpg";
 
-// Import new trading images
+// Import optimized NutriMesh images
+import nutrimesh from "../assets/optimized/nutrimesh.jpg";
+import nutrimesh2 from "../assets/optimized/nutrimesh-2.jpg";
+import nutrimesh3 from "../assets/optimized/nutrimesh-3.jpg";
+
+// Import trading platform images
 import cryptodashboard from "../assets/cryptodashboard.png";
 import trading from "../assets/trading.png";
 import analysis from "../assets/analysis.png";
@@ -38,6 +43,27 @@ const services = [
       "Tailored solutions that transform your business needs into powerful, scalable software applications.",
     icon: <CodeIcon sx={{ fontSize: 40 }} />,
     images: [
+      {
+        url: nutrimesh,
+        title: "NutriMesh",
+        description:
+          "Health analytics platform landing page with voice logging and pattern insights",
+        alt: "NutriMesh health platform landing page",
+      },
+      {
+        url: nutrimesh2,
+        title: "NutriMesh Mobile App",
+        description:
+          "AI-powered nutrition companion with voice logging and daily tracking",
+        alt: "NutriMesh mobile app home screen",
+      },
+      {
+        url: nutrimesh3,
+        title: "Weekly Insights",
+        description:
+          "Personalized weekly memoir with sleep, nutrition, and habit correlations",
+        alt: "NutriMesh weekly insights and discovery screen",
+      },
       {
         url: cryptodashboard,
         title: "Crypto Dashboard",

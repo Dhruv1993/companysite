@@ -16,7 +16,12 @@ import customHardware1 from "../assets/optimized/customHardware1.jpg";
 import selfbalancebot from "../assets/optimized/selfbalancebot.jpg";
 import stm from "../assets/optimized/stm.jpg";
 
-// Import new trading images
+// Import optimized NutriMesh images
+import nutrimesh from "../assets/optimized/nutrimesh.jpg";
+import nutrimesh2 from "../assets/optimized/nutrimesh-2.jpg";
+import nutrimesh3 from "../assets/optimized/nutrimesh-3.jpg";
+
+// Import trading platform images
 import cryptodashboard from "../assets/cryptodashboard.png";
 import trading from "../assets/trading.png";
 import analysis from "../assets/analysis.png";
@@ -27,6 +32,24 @@ const services = [
     description:
       "We create tailored software solutions that perfectly align with your business needs. From web applications to enterprise systems, our development team delivers scalable, secure, and high-performance software that drives your business forward.",
     features: [
+      {
+        title: "NutriMesh",
+        description:
+          "Health analytics platform with voice logging, pattern detection, and privacy-first design.",
+        image: nutrimesh,
+      },
+      {
+        title: "NutriMesh Mobile App",
+        description:
+          "AI-powered nutrition companion with voice logging, meal tracking, and daily insights.",
+        image: nutrimesh2,
+      },
+      {
+        title: "Weekly Insights",
+        description:
+          "Personalized weekly memoir correlating sleep, nutrition, and habit patterns.",
+        image: nutrimesh3,
+      },
       {
         title: "Crypto Dashboard",
         description:
@@ -148,7 +171,7 @@ function Services() {
         title="Services"
         description="From custom software development to integrated circuits, we provide end-to-end technology solutions including hardware design, 3D printing services, and PCB development."
         path="/services"
-        keywords="custom software development, hardware solutions, 3D printing services, integrated circuit design, PCB design, embedded systems, IoT development, crypto dashboard, trading platform, rapid prototyping, Australia"
+        keywords="custom software development, health analytics app, crypto dashboard, trading platform, mobile app development, hardware solutions, 3D printing services, integrated circuit design, PCB design, embedded systems, IoT development, rapid prototyping, Australia"
       />
       <ServicesHero />
       {services.map((service, index) => (

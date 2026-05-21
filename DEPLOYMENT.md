@@ -41,7 +41,7 @@ VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
 
 ```env
 # Contact Information
-VITE_CONTACT_EMAIL=contact@softpeaklabs.com
+VITE_CONTACT_EMAIL=dhruv.khullar@softpeaklabs.com.au
 VITE_CONTACT_PHONE=+1 (555) 123-4567
 VITE_CONTACT_LOCATION=San Francisco, CA
 
